@@ -1,0 +1,7 @@
+# Module 02 — Source Traceability
+
+## Primary supplied sources
+
+`3.1.1 Sustainable Finance Introduction.docx`; `3.1.2 Difference Between Sustainable, Green and Environmental Finance.docx`; `3.1.3 Importance of Sustainable Finance.docx`; `3.1.4 Risks, Challenges or Criticism of Sustainable Finance.docx`; `3.1.5 Guest Speaker Introduction - Jakub Malich.docx`; `3.1.6 Jakub Malich - What is Sustainable Finance_.docx`; `3.1.7 Jakub Malich - Difference Between Sustainable, Green and Environmental Finance.docx`; `3.2 Jakub Malich - Risk Management in Sustainable Finance.docx`; `3.3.1 Guest Speaker Introduction - Duncan Lee.docx`; `3.3.2 Jakub Malich - ESG Factors in Sustainable Investments.docx`; `3.3.3 Duncan Lee - Net Zero Commitments.docx`; `3.4.2 Jakub Malich - Analysing Companies for ESG Ratings.docx`; `3.5.2 Duncan Lee - Pushback on Sustainable Investments.docx`.
+
+Guest content is paraphrased as time-bounded practitioner perspective, not endorsement or proof of current organizational commitments. Current product and regulatory examples were checked against the primary sources in the course register as at 29 August 2026; unsupported performance figures were removed. The beginner materiality process is synthesized transparently from GRI 3 impact-materiality guidance, EFRAG IG 1 double-materiality implementation guidance and IFRS S1’s investor-focused objective. It is framework-neutral decision literacy, not a claim of reporting compliance.
