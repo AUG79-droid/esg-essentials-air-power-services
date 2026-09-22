@@ -1,0 +1,5 @@
+# Módulo 04 — Trazabilidad de fuentes
+
+Fuentes primarias: `1.2.2 Introduction to Social.docx`; `4.1.1 Social Introduction.docx`; `4.2.1 DEI Introduction.docx`; `4.2.2 Implementing DEI Practices.docx`; `4.2.3 Challenges in Implementing DEI.docx`; `4.2.4 Common DEI Topics.docx`; `4.2.5 DEI and Board Governance.docx`; `4.2.6 Guest Speaker Introduction - Kate Wood.docx`; `4.2.9 Kate Wood - Conversations around DEI and future trends.docx`; `4.2.10 Kate Wood - DEI and ESG.docx`; `4.3.3 Vivian Seo - Connecting Corporates with Civil Society.docx`.
+
+Kate Wood y Vivian Seo se presentan como perspectivas profesionales acotadas al tiempo, no como respaldos. La diligencia debida en derechos humanos, gravedad, reparación y participación se apoyan en UNGP/OHCHR y guías de la OCDE; los fundamentos sobre datos de personas utilizan principios del RGPD de la Comisión Europea como ejemplo de la UE. La legislación y terminología locales siguen sujetas a revisión de aplicabilidad. Los métodos desarrollan conciencia y calidad de decisión, no cualificación en RR. HH., privacidad, investigación o asesoramiento legal.
