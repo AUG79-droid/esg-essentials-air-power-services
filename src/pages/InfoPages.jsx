@@ -1,10 +1,27 @@
-import { glossary } from '../data/course'
-import sources00 from '../../content/module-00/SOURCES.md?raw'
-import sources09 from '../../content/module-09/SOURCES.md?raw'
-import { moduleContent } from '../data/moduleContent'
+import { getGlossary } from '../data/course'
+import sources00En from '../../content/module-00/SOURCES.md?raw'
+import sources00Es from '../../content-es/module-00/SOURCES.md?raw'
+import sources09En from '../../content/module-09/SOURCES.md?raw'
+import sources09Es from '../../content-es/module-09/SOURCES.md?raw'
+import { getModuleContent } from '../data/moduleContent'
 import Markdown from '../components/Markdown'
 import { useProgress } from '../state/ProgressContext'
-export function Glossary(){return <div className="page narrow"><div className="eyebrow">SHARED LANGUAGE</div><h1>Glossary</h1><p className="lead">Terms carry different meanings. These definitions preserve the distinctions used throughout the course.</p><dl className="glossary">{glossary.map(([t,d])=><div key={t}><dt>{t}</dt><dd>{d}</dd></div>)}</dl></div>}
-export function Sources(){return <div className="page narrow"><div className="eyebrow">EVIDENCE ARCHITECTURE</div><h1>Sources &amp; further reading</h1><p className="lead">Source notes remain close to the module they support. They establish traceability; they do not turn learning scenarios into real company claims.</p><div className="source-library"><Markdown source={sources00}/>{Object.values(moduleContent).map(m=><Markdown key={m.id} source={m.sources}/>)}<Markdown source={sources09}/></div></div>}
-export function About(){return <div className="page narrow"><div className="eyebrow">ABOUT THIS EXPERIENCE</div><h1>Better questions. Better governed decisions.</h1><p className="lead">ESG Essentials is an educational course for Air Power Services contexts. Fictional learning scenarios are non-classified and are not actual supplier, policy or approval decisions.</p><div className="editorial-panel"><h2>Important boundary</h2><p>This course does not provide legal, financial, investment, technical-airworthiness or operational approval. It does not certify, qualify or accredit the learner. Follow applicable organizational procedures and accountable authorities in real decisions.</p></div></div>}
-export function Progress(){const {progress,reset}=useProgress();return <div className="page narrow"><div className="eyebrow">LOCAL LEARNING STATE</div><h1>Learning progress</h1><div className="progress-summary"><strong>{progress.completedModules.length}/10</strong><p>Modules completed</p></div><p>Your state is stored only in this browser on this device. Resetting cannot be undone.</p><button className="button danger" onClick={()=>{if(window.confirm('Reset all learning progress on this device?'))reset()}}>Reset progress</button></div>}
+import { useLanguage } from '../i18n/LanguageContext'
+
+export function Glossary(){
+ const {lang}=useLanguage(),es=lang==='es',glossary=getGlossary(lang)
+ return <div className="page narrow"><div className="eyebrow">{es?'LENGUAJE COMPARTIDO':'SHARED LANGUAGE'}</div><h1>{es?'Glosario':'Glossary'}</h1><p className="lead">{es?'Los términos pueden tener significados distintos. Estas definiciones conservan las distinciones utilizadas en todo el curso.':'Terms carry different meanings. These definitions preserve the distinctions used throughout the course.'}</p><dl className="glossary">{glossary.map(([t,d])=><div key={t}><dt>{t}</dt><dd>{d}</dd></div>)}</dl></div>
+}
+export function Sources(){
+ const {lang}=useLanguage(),es=lang==='es',moduleContent=getModuleContent(lang)
+ const sources00=es?sources00Es:sources00En,sources09=es?sources09Es:sources09En
+ return <div className="page narrow"><div className="eyebrow">{es?'ARQUITECTURA DE EVIDENCIA':'EVIDENCE ARCHITECTURE'}</div><h1>{es?'Fuentes y lecturas adicionales':'Sources & further reading'}</h1><p className="lead">{es?'Las notas de fuentes se mantienen cerca del módulo al que respaldan. Proporcionan trazabilidad; no convierten los escenarios de aprendizaje en afirmaciones reales de la empresa.':'Source notes remain close to the module they support. They establish traceability; they do not turn learning scenarios into real company claims.'}</p><div className="source-library"><Markdown source={sources00}/>{Object.values(moduleContent).map(m=><Markdown key={m.id} source={m.sources}/>)}<Markdown source={sources09}/></div></div>
+}
+export function About(){
+ const {lang}=useLanguage(),es=lang==='es'
+ return <div className="page narrow"><div className="eyebrow">{es?'ACERCA DE ESTA EXPERIENCIA':'ABOUT THIS EXPERIENCE'}</div><h1>{es?'Mejores preguntas. Decisiones mejor gobernadas.':'Better questions. Better governed decisions.'}</h1><p className="lead">{es?'ESG Essentials es un curso educativo para contextos de Air Power Services. Los escenarios ficticios de aprendizaje son no clasificados y no representan decisiones reales sobre proveedores, políticas o aprobaciones.':'ESG Essentials is an educational course for Air Power Services contexts. Fictional learning scenarios are non-classified and are not actual supplier, policy or approval decisions.'}</p><div className="editorial-panel"><h2>{es?'Límite importante':'Important boundary'}</h2><p>{es?'Este curso no proporciona aprobación legal, financiera, de inversión, técnica de aeronavegabilidad ni operativa. No certifica, cualifica ni acredita al alumnado. En decisiones reales deben seguirse los procedimientos organizativos y las autoridades responsables aplicables.':'This course does not provide legal, financial, investment, technical-airworthiness or operational approval. It does not certify, qualify or accredit the learner. Follow applicable organizational procedures and accountable authorities in real decisions.'}</p></div></div>
+}
+export function Progress(){
+ const {progress,reset}=useProgress(); const {lang}=useLanguage(); const es=lang==='es'
+ return <div className="page narrow"><div className="eyebrow">{es?'ESTADO LOCAL DE APRENDIZAJE':'LOCAL LEARNING STATE'}</div><h1>{es?'Progreso de aprendizaje':'Learning progress'}</h1><div className="progress-summary"><strong>{progress.completedModules.length}/10</strong><p>{es?'Módulos completados':'Modules completed'}</p></div><p>{es?'Tu progreso se guarda únicamente en este navegador y dispositivo. Restablecerlo no puede deshacerse.':'Your state is stored only in this browser on this device. Resetting cannot be undone.'}</p><button className="button danger" onClick={()=>{if(window.confirm(es?'¿Restablecer todo el progreso de aprendizaje de este dispositivo?':'Reset all learning progress on this device?'))reset()}}>{es?'Restablecer progreso':'Reset progress'}</button></div>
+}
