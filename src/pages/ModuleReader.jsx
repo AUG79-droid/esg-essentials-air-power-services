@@ -20,7 +20,7 @@ export default function ModuleReader(){
  const content=getModuleContent(lang)[id],meta=getModules(lang).find(m=>m.id===id)
  const {progress,visit,completeModule}=useProgress()
  const state=meta?moduleState(id,progress):'LOCKED',index=viewOrder.indexOf(view),safeView=index<0?'opening':view
- useEffect(()=>{if(content&&state!=='LOCKED')visit(`${id}:${safeView}`,`/module/${id}/${safeView}`)},[id,safeView,content,state,visit])
+ useEffect(()=>{if(content&&state!=='LOCKED')visit(`${id}:${safeView}`,`/module/${id}/${safeView}`)},[id,safeView,content,state])
  if(!content||!meta)return <Navigate to="/modules"/>; if(state==='LOCKED')return <Navigate to="/modules"/>
  const parts={opening:content.opening,theory:content.theory,scenario:content.scenario,close:content.close}
  const prev=index>0?viewOrder[index-1]:null,next=index<viewOrder.length-1?viewOrder[index+1]:null,labels=viewLabels[lang]
