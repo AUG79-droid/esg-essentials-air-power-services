@@ -19,10 +19,16 @@ export function parseQuestions(source,id){
   let prompt='',answers=[]
   const separate=[...before.matchAll(/^([A-D])\.\s*(.+?)\s*$/gm)]
   if(separate.length===4){
-   const first=separate[0].index; prompt=before.slice(before.indexOf('\n')+1,first).trim(); answers=separate.map(x=>x[2].replace(/\s{2,}$/,'').trim())
+   const first=separate[0].index
+   prompt=before.slice(before.indexOf('\n')+1,first).trim()
+   answers=separate.map(x=>x[2].replace(/\s{2,}$/,'').trim())
   }else{
    const body=before.slice(before.indexOf('\n')+1).trim(),start=body.search(/\sA:\s/)
-   if(start>=0){prompt=body.slice(0,start).trim();const optionText=body.slice(start+1);answers=[...optionText.matchAll(/(?:^|\s)([A-D]):\s*([\s\S]*?)(?=\s*[A-D]:\s*|$)/g)].map(x=>x[2].trim().replace(/[.;]$/,''))}
+   if(start>=0){
+    prompt=body.slice(0,start).trim()
+    const optionText=body.slice(start+1)
+    answers=[...optionText.matchAll(/(?:^|\s)([A-D]):\s*([\s\S]*?)(?=\s*[A-D]:\s*|$)/g)].map(x=>x[2].trim().replace(/[.;]$/,''))
+   }
   }
   return {id:`M${id}-Q${String(index+1).padStart(2,'0')}`,title:heading.replace(/^\d+\s*[—-]?\s*/,'')||`${source.includes('## Pregunta')?'Pregunta':'Question'} ${index+1}`,q:prompt,a:answers,c:correctMatch?correctMatch[1].charCodeAt(0)-65:0,r:correctMatch?.[2]?.trim()||''}
  })
