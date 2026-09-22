@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
+import { useLanguage } from './i18n/LanguageContext'
 const Overview=lazy(()=>import('./pages/Overview'))
 const ModuleMap=lazy(()=>import('./pages/ModuleMap'))
 const Module00=lazy(()=>import('./pages/Module00'))
@@ -12,7 +13,10 @@ const Glossary=lazy(()=>import('./pages/InfoPages').then(module=>({default:modul
 const Progress=lazy(()=>import('./pages/InfoPages').then(module=>({default:module.Progress})))
 const Sources=lazy(()=>import('./pages/InfoPages').then(module=>({default:module.Sources})))
 
-function RouteLoader(){return <div className="route-loader" role="status" aria-live="polite"><span aria-hidden="true"/>Loading learning experience…</div>}
+function RouteLoader(){
+ const {lang}=useLanguage()
+ return <div className="route-loader" role="status" aria-live="polite"><span aria-hidden="true"/>{lang==='es'?'Cargando la experiencia de aprendizaje…':'Loading learning experience…'}</div>
+}
 
 export default function App(){return <Layout><Suspense fallback={<RouteLoader/>}><Routes>
  <Route path="/" element={<Home/>}/><Route path="/overview" element={<Overview/>}/><Route path="/modules" element={<ModuleMap/>}/>
