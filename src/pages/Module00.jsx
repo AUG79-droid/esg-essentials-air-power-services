@@ -19,7 +19,7 @@ const metaEs={opening:['Orientación','Por qué existe ESG'],theory:['Teoría b�
 function between(source,start,end){const a=source.indexOf(start);if(a<0)return '';const from=a+start.length;const b=end?source.indexOf(end,from):-1;return source.slice(from,b<0?source.length:b)}
 export default function Module00(){
  const {view}=useParams(); const {progress,visit,completeModule00}=useProgress(); const {lang}=useLanguage(); const es=lang==='es'; const index=views.indexOf(view)
- useEffect(()=>{if(index>=0)visit('00:'+view,'/module/00/'+view)},[view,index,visit])
+ useEffect(()=>{if(index>=0&&!progress.visited['00:'+view])visit('00:'+view,'/module/00/'+view)},[view,index,visit,progress.visited])
  if(index<0)return <Navigate to="/module/00/opening"/>
  const meta=es?metaEs:metaEn; const [label,title]=meta[view]; const ready=module00Ready(progress)
  const moduleText=es?moduleTextEs:moduleTextEn, sourcesText=es?sourcesTextEs:sourcesTextEn

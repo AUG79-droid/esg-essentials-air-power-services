@@ -82,13 +82,15 @@ export function labStagesComplete(lab){return [1,2,3,4,5,6,7,8].every(stage=>Boo
 export function labRecordComplete(lab){return LAB_RECORD_FIELDS.every(field=>Boolean(lab.record?.[field]?.trim()))}
 export function labReviewComplete(lab){return Object.values(lab.reviewAnswers||{}).filter(x=>x?.completed).length===4}
 export function labCompletionReady(lab){return labStagesComplete(lab)&&labRecordComplete(lab)&&lab.debriefReviewed&&labReviewComplete(lab)}
-export function qualitativeDebrief(lab){
+export function qualitativeDebrief(lab,lang='en'){
+ const labels=lang==='es'?{evidenceQuality:'Calidad de la evidencia',systemsThinking:'Pensamiento sistémico',riskRecognition:'Reconocimiento de riesgos',stakeholderRightsHolderAwareness:'Conciencia de partes interesadas / titulares de derechos',governanceDiscipline:'Disciplina de gobernanza',uncertaintyManagement:'Gestión de la incertidumbre',escalationQuality:'Calidad del escalado',lifecycleThinking:'Pensamiento de ciclo de vida',decisionTraceability:'Trazabilidad de la decisión'}:LAB_DIMENSIONS
  const dimensions=Object.fromEntries(Object.keys(LAB_DIMENSIONS).map(key=>[key,lab.dimensions?.[key]||'needsReview']))
- const strong=Object.entries(dimensions).filter(([,value])=>value==='strong').map(([key])=>LAB_DIMENSIONS[key])
- const focus=Object.entries(dimensions).filter(([,value])=>value!=='strong').map(([key])=>LAB_DIMENSIONS[key])
+ const strong=Object.entries(dimensions).filter(([,value])=>value==='strong').map(([key])=>labels[key])
+ const focus=Object.entries(dimensions).filter(([,value])=>value!=='strong').map(([key])=>labels[key])
  const warnings=[]
- if(lab.unlockedEvidence?.includes('safeguarding-warning')) warnings.push('An unsafe interview route weakened evidence reliability and requires a protected re-inquiry.')
- if(lab.unlockedEvidence?.includes('overclaim-exposure')) warnings.push('The proposed external claim exceeded the available provenance and must be narrowed or withheld.')
- if(!lab.stageStates?.[6]?.result?.nonCompensableGatePreserved) warnings.push('Commercial onboarding was allowed to blur the mandatory technical authority gate.')
- return {dimensions,strong,focus,warnings,summary:strong.length>=7?'Your record consistently keeps evidence, affected people, lifecycle effects and authority visible.':strong.length>=4?'Your reasoning is broadly integrated, with specific controls still needing sharper evidence or ownership.':'The decision record needs stronger boundaries, protected evidence, mandatory authority and monitoring conditions.'}
+ if(lab.unlockedEvidence?.includes('safeguarding-warning')) warnings.push(lang==='es'?'Una vía de entrevista insegura debilitó la fiabilidad de la evidencia y exige una nueva consulta protegida.':'An unsafe interview route weakened evidence reliability and requires a protected re-inquiry.')
+ if(lab.unlockedEvidence?.includes('overclaim-exposure')) warnings.push(lang==='es'?'La afirmación externa propuesta superó la procedencia disponible y debe acotarse o retirarse.':'The proposed external claim exceeded the available provenance and must be narrowed or withheld.')
+ if(!lab.stageStates?.[6]?.result?.nonCompensableGatePreserved) warnings.push(lang==='es'?'Se permitió que la incorporación comercial difuminara la barrera obligatoria de autoridad técnica.':'Commercial onboarding was allowed to blur the mandatory technical authority gate.')
+ const summary=lang==='es'?(strong.length>=7?'Tu registro mantiene visibles de forma coherente la evidencia, las personas afectadas, los efectos del ciclo de vida y la autoridad.':strong.length>=4?'Tu razonamiento está ampliamente integrado, aunque algunos controles necesitan evidencia o responsables más precisos.':'El registro de decisión necesita alcances más sólidos, evidencia protegida, autoridad obligatoria y condiciones de seguimiento.'):(strong.length>=7?'Your record consistently keeps evidence, affected people, lifecycle effects and authority visible.':strong.length>=4?'Your reasoning is broadly integrated, with specific controls still needing sharper evidence or ownership.':'The decision record needs stronger boundaries, protected evidence, mandatory authority and monitoring conditions.')
+ return {dimensions,strong,focus,warnings,summary}
 }
