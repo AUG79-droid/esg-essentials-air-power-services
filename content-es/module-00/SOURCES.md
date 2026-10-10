@@ -1,22 +1,22 @@
-# Módulo 00 — Trazabilidad de fuentes
+# Módulo 00 — Fuentes y lecturas adicionales
 
-## Fuentes primarias proporcionadas
+Utiliza estos enlaces para consultar los conceptos y comprobar la cronología del caso presentada en el módulo. Cada enlace abre la página pública mantenida por la institución correspondiente.
 
-- `1.2.1 Introduction to Environmental.docx` — pilar ambiental y relevancia estratégica.
-- `1.2.2 Introduction to Social.docx` — personas, partes interesadas, derechos, transparencia y resiliencia a largo plazo.
-- `1.2.3 Introduction to Governance.docx` — definición de gobernanza, supervisión por el consejo, transparencia, rendición de cuentas y equidad.
-- `1.3.1 Enron Case Study.docx` — secuencia del caso, cultura, opacidad contable, fallos de control y aseguramiento.
-- `3.1.6 Jakub Malich - What is Sustainable Finance_.docx` — perspectiva profesional sobre los efectos en ambas direcciones y el desarrollo de las finanzas sostenibles.
-- `5.1.2 The _G_ in ESG.docx` — gobernanza como mecanismo que conecta compromisos y decisiones.
+## ESG, impactos y gobernanza
 
-## Notas de uso
+- [Estándares GRI — Estándares Universales, incluido GRI 3: Temas materiales](https://www.globalreporting.org/standards/) — reporte de impactos e identificación de temas materiales.
+- [Fundación IFRS — materiales de apoyo de IFRS S1](https://www.ifrs.org/supporting-implementation/supporting-materials-for-ifrs-sustainability-disclosure-standards/ifrs-s1/) — información financiera relacionada con sostenibilidad orientada a inversores.
+- [EFRAG — documentos de orientación para implantar ESRS](https://www.efrag.org/en/projects/esrs-implementation-guidance-documents) — orientación de aplicación, incluida la doble materialidad.
+- [Principios de Gobierno Corporativo del G20 y la OCDE 2023](https://www.oecd.org/en/publications/2023/09/g20-oecd-principles-of-corporate-governance-2023_60836fcb.html) — funciones, supervisión, divulgación y rendición de cuentas.
+- [OCDE — debida diligencia para una conducta empresarial responsable](https://www.oecd.org/en/topics/sub-issues/due-diligence-guidance-for-responsible-business-conduct.html) — debida diligencia basada en riesgos en las relaciones empresariales.
 
-Todos los conceptos procedentes de las fuentes están parafraseados. La cronología de Enron se condensa para centrarse en la lógica de aprendizaje sobre gobernanza y se ha contrastado con registros de la SEC, del Tribunal Supremo de Estados Unidos/GovInfo y con registros legislativos incluidos en el registro de fuentes del curso. La interpretación histórica de la fuente sobre el lugar de Enron en ESG no se presenta como un hecho establecido.
+## Enron y el caso de gobernanza
 
-## Adiciones originales
+- [SEC de Estados Unidos — ¿Qué hizo la Ley Sarbanes–Oxley?](https://www.sec.gov/newsroom/speeches-statements/office-hours-gary-gensler-sarbanes-oxley) — retrospectiva de la SEC que relaciona Enron y otros escándalos con las reformas de 2002.
+- [SEC de Estados Unidos — comunicado sobre la condena de Andersen](https://www.sec.gov/newsroom/press-releases/2002-89-sec-statement-regarding-andersen-case-conviction) — registro contemporáneo de la condena de 2002 y de sus consecuencias profesionales.
+- [Tribunal Supremo de Estados Unidos vía GovInfo — Arthur Andersen LLP v. United States, 544 U.S. 696 (2005)](https://www.govinfo.gov/app/details/USREPORTS-544/USREPORTS-544-696/context) — sentencia que anuló la condena debido a instrucciones defectuosas al jurado.
+- [SEC de Estados Unidos — Informe anual de 2002](https://www.sec.gov/pdf/annrep02/ar02full.pdf) — información contemporánea sobre supervisión de auditorías, divulgación, aplicación de la ley e implantación de Sarbanes–Oxley.
 
-El dilema del proveedor y la interacción ESG Compass están etiquetados como `ESCENARIO DE APRENDIZAJE DE AIR POWER SERVICES`. No describen una política de Airbus, un proveedor real ni un proceso clasificado.
+## Sobre el escenario de aprendizaje
 
-## Controles de lagunas
-
-Las externalidades se explican a un nivel conceptual básico y ahora se conectan con el proceso de materialidad neutral respecto al marco utilizado en los Módulos 02 y 08. Ese proceso se apoya en GRI 3, EFRAG IG 1 e IFRS S1, pero no se presenta como una metodología universal de reporte.
+El caso de proveedores y la actividad ESG Compass son ejercicios ficticios creados para aprender. No describen una política de Airbus, un proveedor real, una decisión de compra real ni un proceso clasificado. Su finalidad es practicar cómo distinguir una afirmación de una evidencia, hacer visible la incertidumbre y asignar acciones de seguimiento.

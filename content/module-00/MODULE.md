@@ -81,11 +81,27 @@ The practical lesson is that governance is not administrative overhead added aft
 
 ## What this means in Air Power Services
 
-### AIR POWER SERVICES LEARNING SCENARIO — The apparently complete supplier decision
+### Your brief: recommend the next step, not a winner at any cost
 
-A procurement team is choosing between two suppliers for a non-classified, non-safety-critical support component. Both meet the specification. Supplier A has a higher unit price but provides traceable material records, stable workforce indicators and clear subcontractor controls. Supplier B is cheaper and faster but supplies only a sustainability badge, a two-page audit summary and an assurance that all sub-tier suppliers are “approved.”
+You are part of a procurement review team comparing **Supplier A** and **Supplier B** for a non-classified, non-safety-critical support component. Both suppliers have passed the same technical and quality gates. Existing stock covers **11 weeks**, and the award meeting is in **10 days**, so there is time for a targeted evidence request; there is no immediate operational emergency.
 
-An ESG lens does not dictate “choose A.” It changes the work required before deciding. The team asks which material and labor risks are relevant, whether evidence reaches beyond tier one, who validated it, how schedule pressure may influence supplier behavior and what contractual or monitoring controls would reduce uncertainty. It also records what is not known. Technical compliance remains essential; ESG evidence makes the commercial and operational view more complete.
+**Supplier A**
+
+- unit price is 8% higher and delivery is in 9 weeks;
+- provides origin records covering 95% of material mass;
+- provides 24 months of workforce indicators and names the person responsible for subcontractor corrective actions;
+- has not yet supplied independent verification of the component's energy-intensity data.
+
+**Supplier B**
+
+- unit price is 12% lower and delivery is in 5 weeks;
+- provides only a tier-one self-declaration and a two-page audit summary with no scope, date or sample;
+- states that sub-tier suppliers are “approved” but does not identify the approval criteria or accountable owner;
+- provides no information about worker grievance channels.
+
+**Your task:** decide which **next step** is defensible with the evidence available. You are not being asked to prove that one supplier is “sustainable” or to ignore cost and delivery. Identify the decision-relevant signals, state what is still unknown and select a provisional route with specific conditions. The ESG Compass on the next screen will guide you through those steps.
+
+An ESG lens does not automatically mean “choose A.” It makes the comparison complete and traceable: technical compliance remains a gate; price and schedule remain relevant; unsupported claims remain uncertainty rather than evidence. A good recommendation explains what can be decided now, what must be verified, who owns the follow-up and when the decision should be revisited.
 
 ## Myth vs reality
 

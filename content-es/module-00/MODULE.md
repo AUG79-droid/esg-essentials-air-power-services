@@ -81,11 +81,27 @@ La lección práctica es que la gobernanza no es una carga administrativa añadi
 
 ## Qué significa esto en Air Power Services
 
-### ESCENARIO DE APRENDIZAJE DE AIR POWER SERVICES — La decisión de proveedor aparentemente completa
+### Tu encargo: recomendar el siguiente paso, no elegir a cualquier precio
 
-Un equipo de compras debe elegir entre dos proveedores de un componente de soporte no clasificado y no crítico para la seguridad. Ambos cumplen la especificación. El proveedor A tiene un precio unitario más alto, pero proporciona registros trazables de materiales, indicadores estables de la plantilla y controles claros sobre subcontratistas. El proveedor B es más barato y rápido, pero únicamente aporta un distintivo de sostenibilidad, un resumen de auditoría de dos páginas y la garantía de que todos los proveedores de niveles inferiores están «aprobados».
+Formas parte de un equipo de revisión de compras que compara al **proveedor A** y al **proveedor B** para un componente de soporte no clasificado y no crítico para la seguridad. Ambos han superado los mismos controles técnicos y de calidad. Las existencias actuales cubren **11 semanas** y la reunión de adjudicación es dentro de **10 días**; por tanto, hay tiempo para solicitar evidencia concreta y no existe una urgencia operativa inmediata.
 
-Una perspectiva ESG no ordena «elegir A». Cambia el trabajo necesario antes de decidir. El equipo pregunta qué riesgos de materiales y laborales son relevantes, si la evidencia llega más allá del primer nivel, quién la validó, cómo la presión de calendario puede influir en el comportamiento del proveedor y qué controles contractuales o de seguimiento reducirían la incertidumbre. También registra lo que no se conoce. El cumplimiento técnico sigue siendo esencial; la evidencia ESG hace más completa la visión comercial y operativa.
+**Proveedor A**
+
+- precio unitario un 8% superior y entrega en 9 semanas;
+- aporta registros de origen que cubren el 95% de la masa de los materiales;
+- aporta 24 meses de indicadores de plantilla e identifica a la persona responsable de las acciones correctivas de los subcontratistas;
+- todavía no ha aportado una verificación independiente de los datos de intensidad energética del componente.
+
+**Proveedor B**
+
+- precio unitario un 12% inferior y entrega en 5 semanas;
+- solo aporta una autodeclaración de primer nivel y un resumen de auditoría de dos páginas sin alcance, fecha ni muestra;
+- afirma que los proveedores de niveles inferiores están «aprobados», pero no identifica los criterios de aprobación ni a la persona responsable;
+- no aporta información sobre canales de reclamación para los trabajadores.
+
+**Tu tarea:** decidir qué **siguiente paso** puede defenderse con la evidencia disponible. No se te pide demostrar que un proveedor es «sostenible» ni ignorar el coste y el plazo. Identifica las señales relevantes para la decisión, indica qué sigue sin conocerse y elige una vía provisional con condiciones concretas. La actividad ESG Compass de la pantalla siguiente te guiará paso a paso.
+
+Una perspectiva ESG no significa automáticamente «elegir A». Hace que la comparación sea completa y trazable: el cumplimiento técnico sigue siendo un requisito; el precio y el plazo siguen siendo relevantes; las afirmaciones sin respaldo siguen siendo incertidumbre, no evidencia. Una buena recomendación explica qué puede decidirse ahora, qué debe verificarse, quién realizará el seguimiento y cuándo deberá revisarse la decisión.
 
 ## Mito frente a realidad
 
