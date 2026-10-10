@@ -160,6 +160,8 @@ html,body,#root,.app-shell{max-width:100%;overflow-x:clip}
 
 /* Keep the Module 00 decision node above the three equal lenses. */
 .decision-system .orbit-core{grid-column:1/-1;grid-row:auto}.decision-system .dimension-grid,.decision-system .decision-caption{grid-column:1/-1}
+.decision-system .dimension-grid:after{content:"";position:absolute;z-index:1;left:50%;top:-1.5rem;height:3.5rem;border-left:1px solid #78a7c6;transform:translateX(-.5px);pointer-events:none}
+@media(max-width:1000px){.decision-system .dimension-grid:after{display:none}}
 
 
 /* Bilingual course controls */
